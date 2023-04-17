@@ -1,5 +1,5 @@
 Modern Full Stack ECommerce Application with Stripe & Sanity
-![eCommerce](https://cdn.sanity.io/images/pko5inrv/production/580c49eb4a48b8e105f79786bcc92d8da6bc1f2d-1850x2852.png?w=2000&fit=max&auto=format)
+![eCommerce](https://cdn.sanity.io/images/sa8rb1zr/production/9fc41d8016b611642527df17da0c254f9c007122-1851x993.jpg)
 
 ## Launch your development career with project-based coaching - https://sci-fi-blog-website.netlify.app
 
