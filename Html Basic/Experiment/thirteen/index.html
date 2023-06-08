@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array and its methods</title>
+</head>
+<body>
+    <h1>Understanding array and its methods!</h1>
+</body>
+<script>
+    const arr = [1,2,3,4,5];
+    for(let i = 0; i < arr.length; i++){
+        // console.log("arr[i]", arr[i]);
+    }
+
+    const arr1 = [1,2,3,4,5,6,7,8,9];
+    // here i will be the index of the array
+    for(let i in arr1){
+        // console.log("i", i);
+    }
+
+    // here i will be the element of the array
+    const arr2 = [1,2,3,4,5,6,7,8,9];
+    for(let i of arr2){
+        // console.log("i", i);
+    }
+
+    // const arr3 = [1,2,3,4,5,6,7,8,9];
+    // arr3.forEach((element, index) => { arr3[index] = element * element } );
+    // console.log("arr3", arr3);
+
+    // forEach method
+    const arr3 = [1, 2, 3, 4, 5];
+    function square(element, index) {
+        arr3[index] = element * element;
+    }
+    // [1, 4, 9, 16, 25]
+
+    arr3.forEach(square);
+    console.log("arr3", arr3);
+
+    const arr4 = [1,2,3,4,5,6,7,8,9,10];
+    function multiplyByIndex(element, index) {
+        return element * index;
+    }
+
+    // [0, 2, 6, ...];
+
+    const newArr4 = arr4.map(multiplyByIndex);
+    console.log("arr4", arr4);
+    console.log("mewArr4", newArr4);
+
+    // slice method
+        // a-> It do not modify the original array
+        // b-> It returns a new array by selecting the elements from original array
+        // c-> array.slice(startIndex, endIndex);
+        // arr =  [1,2,3,4,5,6,7,8,9,10]
+        // arr.slice(3, 7);
+        // [4,5,6,7]
+
+    const arr5 = [1,2,3,4,5,6,7,8,9,10];
+    const newArr5 = arr5.slice(2, 8);
+    console.log("arr5", arr5);
+    console.log("newarr5", newArr5);
+
+    // splice method
+        // a-> It do modify the original array
+        // b-> It returns a new array with the removed elements
+        // c-> array.aplice(startIndex, noOfElementToBeDeleted, x1, x2, x3, ..., xn);
+
+    const arr6 = [1,2,3,4,5,6,7,8,9,10];
+    const newArr6 = arr6.splice(4, 2, 100, 200, 300);
+    console.log("arr6", arr6); // [1,2,3,4,100, 200, 300, 7, 8, 9, 10] 
+    console.log("newArr6", newArr6); // [5, 6]
+
+    const arr7 = [11, 21, 31, 41, 51, 61, 71, 81, 91, 100];
+    const newArr7 = arr7.splice(3, 5, 1, 2);
+    console.log("arr7", arr7); // [ 11, 21, 31, 1, 2, 91, 100]
+    console.log("newArr7", newArr7); // [41, 51, 61, 71, 81]
+
+
+
+</script>
+</html>
